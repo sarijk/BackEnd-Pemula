@@ -60,7 +60,6 @@ const addBookHandler = (request, h) => {
   return response;
 };
 
-/* KRITERIA 2 */
 const getAllBooksHandler = (request, h) => {
   const { name, reading, finished } = request.query;
 
@@ -141,7 +140,6 @@ const getAllBooksHandler = (request, h) => {
   });
 };
 
-/* KRITERIA 3 */
 const getBookByIdHandler = (request, h) => {
   const { bookId } = request.params;
 
@@ -164,7 +162,6 @@ const getBookByIdHandler = (request, h) => {
   return response;
 };
 
-/* KRITERIA 4 */
 const editBookByIdHandler = (request, h) => {
   const { bookId } = request.params;
 
@@ -220,7 +217,6 @@ const editBookByIdHandler = (request, h) => {
   return response;
 };
 
-/* KRITERIA 5 */
 const deleteBookByIdHandler = (request, h) => {
   const { bookId } = request.params;
 
